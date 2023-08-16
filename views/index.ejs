@@ -1,0 +1,27 @@
+<%- include('partials/header.ejs') %>
+</main>
+<table>
+    <tr>
+        <td></td>
+    </tr>
+</table>
+<div class="form-check form-check-inline align-items-center block">
+    <div class=" ali">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">sleep</label>
+
+        <% if(locals.datas) { %>
+            <% for (let i=0; i<datas.length; i++) {%>
+            <br>
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label" for="inlineCheckbox1"> <%= datas[i] %> </label>
+        <% }} %>
+    </div>
+        
+    <br>
+    <form method="post" action="/add">
+        <button  type="submit" class="btn btn-dark mb-3 ibutton"><img src="images/plus.png" width="30px" height="30px"></button>
+        <input type="text" class="form-control iinput" name="data" placeholder="type here..." aria-describedby="basic-addon2">
+    </form>
+</div>
+<%- include('partials/footer.ejs') %>

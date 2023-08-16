@@ -1,0 +1,47 @@
+html { 
+    height: 100%; 
+}
+body {
+    margin: 20px;
+    min-height: 100%; 
+    position: relative; 
+    padding-bottom: [footer-height];
+    font-size: 25px;
+}
+.marg {
+    margin-left:30px;
+    margin-right:30px;
+}
+.ali {
+    margin-left:20px;
+    margin-right:20px;
+    align-items: center;
+    width: 100%;
+}
+
+form {
+    position: relative;
+}
+
+.iinput {
+    width: 70%;
+    padding-right: 40px;
+}
+  
+.ibutton {
+    /* width: 30px; */
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header {
+    font-size: 15px;
+}
+
+footer { 
+    position: absolute; 
+    left: 0 ; right: 0; bottom: 0; 
+    height: [footer-height];
+    font-size:15px;
+}
