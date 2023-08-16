@@ -14,8 +14,7 @@ app.get("/", (req, res) => {
 app.post("/add",(req,res)=>{
     const newst =req.body.data;
     arr.push(newst);
-    console.log(arr);
-    // const newarr = JSON.stringify(arr);
+    // console.log(arr);
     res.render('index.ejs',{datas:arr});
 })
 
